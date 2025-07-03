@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PlayStationWindows</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-animation"></div>
+
+  <div id="intro">
+    <div class="intro-content">
+      <h1 class="intro-logo">🎮 PlayStationWindows</h1>
+    </div>
+  </div>
+
+  <header>
+    <h1 class="logo">🎮 PlayStationWindows</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#telechargements">Téléchargements</a></li>
+        <li><a href="#guides">Guides</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ACCUEIL -->
+    <section id="accueil" class="section">
+      <h2>Bienvenue</h2>
+      <p>Recréez l'expérience PlayStation sur PC avec PlayStationWindows !</p>
+      <img src="images/img1.png" alt="Visuel accueil" class="image-large" />
+    </section>
+
+    <!-- TÉLÉCHARGEMENTS -->
+    <section id="telechargements" class="section">
+      <h2>Téléchargements</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="images/img1.png" alt="PSW 1" />
+          <h3>PlayStationWindows 1</h3>
+          <a href="telechargements/PlayStationWindows1.zip" class="btn" download>Télécharger</a>
+        </div>
+        <div class="card">
+          <img src="images/img2.png" alt="PSW 2" />
+          <h3>PlayStationWindows 2</h3>
+          <a href="telechargements/PlayStationWindows2.zip" class="btn" download>Télécharger</a>
+        </div>
+        <div class="card">
+          <img src="images/img3.png" alt="PSW 3" />
+          <h3>PlayStationWindows 3</h3>
+          <a href="telechargements/PlayStationWindows3.zip" class="btn" download>Télécharger</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUIDES -->
+    <section id="guides" class="section">
+      <h2>Guides d'installation</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="images/img1.png" alt="Guide 1" />
+          <h3>Guide PSW 1</h3>
+          <a href="telechargements/Guide_PSWindows1.pdf" class="btn" download>Voir le guide</a>
+        </div>
+        <div class="card">
+          <img src="images/img2.png" alt="Guide 2" />
+          <h3>Guide PSW 2</h3>
+          <a href="telechargements/Guide_PSWindows2.pdf" class="btn" download>Voir le guide</a>
+        </div>
+        <div class="card">
+          <img src="images/img3.png" alt="Guide 3" />
+          <h3>Guide PSW 3</h3>
+          <a href="telechargements/Guide_PSWindows3.pdf" class="btn" download>Voir le guide</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIE -->
+    <section id="galerie" class="section">
+      <h2>Galerie</h2>
+      <div class="gallery">
+        <img src="images/img1.png" alt="Capture 1" />
+        <img src="images/img2.png" alt="Capture 2" />
+        <img src="images/img3.png" alt="Capture 3" />
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="apropos" class="section">
+      <h2>À propos</h2>
+      <p>Je suis Noah Tougeron, passionné par l'univers PlayStation. J'ai créé PlayStationWindows pour redonner vie à l'interface console sur PC. Le projet est 100 % personnel et gratuit !</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <form action="mailto:tonemail@example.com" method="POST" enctype="text/plain" class="contact-form">
+        <input type="text" name="Nom" placeholder="Ton nom" required />
+        <input type="email" name="Email" placeholder="Ton email" required />
+        <textarea name="Message" rows="5" placeholder="Ton message..." required></textarea>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 PlayStationWindows - Noah Tougeron</p>
+  </footer>
+
+  <script>
+    window.addEventListener("load", () => {
+      const intro = document.getElementById("intro");
+      setTimeout(() => {
+        intro.classList.add("hide");
+      }, 3000); // 3 secondes
+    });
+  </script>
+</body>
+</html>
+
